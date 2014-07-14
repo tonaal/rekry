@@ -1,0 +1,46 @@
+
+
+Projektin osakokonaisuudet ja ratkaisut:
+----------------------------
+[ OK ]	IDE
+		* Netbeans: https://netbeans.org/
+[ OK ] 	Framework 
+		* CodeIgniter: http://ellislab.com/codeigniter
+[ OK ]	GitHub
+		* rekisteröinti, repon luominen
+[ OK ] 	Tietokanta ja taulut 
+		* DBDesigner: http://www.fabforce.net/dbdesigner4/		
+[ 50%] 	CRUD
+		* Jquery EasyUI: http://www.jeasyui.com/
+		* modataan CodeIgniteriin sopivaksi
+[    ] 	Autentikointi oAuth
+		* HybridAuth: http://hybridauth.sourceforge.net/ 
+		* CodeIgniter-palikka: https://github.com/andacata/HybridIgniter/blob/master/application/controllers/hauth.php
+[    ] 	Käyttäjien hallinta: CRUDiin käyttäjät-taulu
+[    ] 	Offline-selailu: HTML5 Local Storage
+[    ] 	Huoltomiehen paikannus: GPS-gate+selainplugin
+		* http://forum.gpsgate.com/topic.asp?TOPIC_ID=6102
+[    ] 	Ajastimien käyttöliittymä: HTML5 Canvas -piirtotekniikoilla.
+		* kellotaulu näyttää ajastusvälit; vierestä voi säätää tarkkaa aikaa
+[    ] 	Valokuvien pienennys client puolella
+		* javascript/Ajax hoitaa
+
+
+MAANANTAI:
+----------
+- Codeigniter framework asennettu http://176.58.125.202/rekryadmin
+- MySQL root passu ei ollut sama kuin ilmoitettu. resetoin passun.
+- Tietokanta tehty
+- sivuston runko valmis, login screen template valmis
+- CRUD-runko valmis
+- seuraavaksi:
+	* CRUD-palikan muokkaus CodeIgniteriin sopivaksi
+	* käyttäjien hallinta
+	
+TIISTAI:
+
+KESKIVIIKKO:
+
+TORSTAI:
+
+PERJANTAI:
