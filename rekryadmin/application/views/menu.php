@@ -249,10 +249,10 @@ body{
           </tr>
           <tr>
               <td>
- 		 <?php echo anchor('users', 'K&auml;ytt&auml;j&auml;t') ?>
+ 		 <?php echo anchor('crud_users', 'K&auml;ytt&auml;j&auml;t') ?>
               </td>
               <td>
- 		 <?php echo anchor('viherseinat', 'Vihersein&auml;t') ?>
+ 		 <?php echo anchor('crud_greenwalls', 'Vihersein&auml;t') ?>
               </td>
               <td>
 		<?php echo anchor('huoltokaynnit', 'Huoltok&auml;ynnit') ?>

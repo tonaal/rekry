@@ -42,7 +42,7 @@ $(function(){$('#dg').datagrid({
 					ddv.panel({
 						border:false,
 						cache:true,
-						href:'http://176.58.125.202/rekryadmin/crud/show_form.php?index='+index,
+						href:'http://176.58.125.202/rekryadmin/crud/show_form_greenwall.php?index='+index,
 						onLoad:function(){
 							$('#dg').datagrid('fixDetailRowHeight',index);
 							$('#dg').datagrid('selectRow',index);
@@ -55,7 +55,7 @@ $(function(){$('#dg').datagrid({
 		});
 		function saveItem(index){
 			var row = $('#dg').datagrid('getRows')[index];
-			var url = row.isNewRecord ? 'http://176.58.125.202/rekryadmin/crud/save_user.php' : 'http://176.58.125.202/rekryadmin/crud/update_user.php?id='+row.id;
+			var url = row.isNewRecord ? 'http://176.58.125.202/rekryadmin/crud/save_greenwall.php' : 'http://176.58.125.202/rekryadmin/crud/update_greenwall.php?id='+row.id;
 			$('#dg').datagrid('getRowDetail',index).find('form').form('submit',{
 				url: url,
 				onSubmit: function(){
@@ -86,7 +86,7 @@ $(function(){$('#dg').datagrid({
 				$.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
 					if (r){
 						var index = $('#dg').datagrid('getRowIndex',row);
-						$.post('http://176.58.125.202/rekryadmin/crud/destroy_user.php',{id:row.id},function(){
+						$.post('http://176.58.125.202/rekryadmin/crud/destroy_greenwall.php',{id:row.id},function(){
 							$('#dg').datagrid('deleteRow',index);
 						});
 					}
@@ -102,27 +102,28 @@ $(function(){$('#dg').datagrid({
 	</script>
 </head>
 <body>
+
     <center>
-	
    
-	<table id="dg" title="K&auml;ytt&auml;j&auml;hallinta" style="width:700px;height:400px"
-			url="<?php echo site_url('crud_users/index2'); ?>"
+	<table id="dg" title="Seinien hallinta" style="width:700px;height:400px"
+			url="<?php echo site_url('crud_greenwalls/index2'); ?>"
 			toolbar="#toolbar" pagination="true"
 			fitColumns="true" singleSelect="true">
 		<thead>
 			<tr>
-				<th field="firstname" width="50" sortable="true">Etunimi</th>
-				<th field="lastname" width="50" sortable="true">Sukunimi</th>
-				<th field="phone" width="50" sortable="true">Puhelin</th>
-				<th field="email" width="50" sortable="true">Email</th>
+				<th field="wallId" width="50" sortable="true">SeinäID</th>
+				<th field="groupid" width="50" sortable="true">Ryhm&auml;</th>
+                                <th field="address" width="50" sortable="true">Osoite</th>
+				<th field="roominfo" width="50" sortable="true">Huone</th>
+				
 			</tr>
 		</thead>
 	</table>
 	<div id="toolbar">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">Luo uusi k&auml;ytt&auml;j&auml;</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">Luo uusi sein&auml;</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">Poista valittu</a>
 	</div>
-    </center>
     
+    </center>
 </body>
 </html>
