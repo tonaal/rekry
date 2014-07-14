@@ -10,7 +10,7 @@ Projektin osakokonaisuudet ja ratkaisut:
 		* rekisteröinti, repon luominen
 [ OK ] 	Tietokanta ja taulut 
 		* DBDesigner: http://www.fabforce.net/dbdesigner4/		
-[ 50%] 	CRUD
+[ 80%] 	CRUD
 		* Jquery EasyUI: http://www.jeasyui.com/
 		* modataan CodeIgniteriin sopivaksi
 [    ] 	Autentikointi oAuth
@@ -33,9 +33,9 @@ MAANANTAI:
 - Tietokanta tehty
 - sivuston runko valmis, login screen template valmis
 - CRUD-runko valmis
-- seuraavaksi:
-	* CRUD-palikan muokkaus CodeIgniteriin sopivaksi
-	* käyttäjien hallinta
+- CRUD-palikan muokkaus CodeIgniteriin sopivaksi valmis
+- käyttäjien hallinta valmis
+- seuraavaksi crud seinille sekä huoltotoimenpiteille
 	
 TIISTAI:
 
