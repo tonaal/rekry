@@ -10,13 +10,13 @@ Projektin osakokonaisuudet ja ratkaisut:
 		* rekisteröinti, repon luominen
 [ OK ] 	Tietokanta ja taulut 
 		* DBDesigner: http://www.fabforce.net/dbdesigner4/		
-[ 95%] 	CRUD
+[ OK ] 	CRUD
 		* Jquery EasyUI: http://www.jeasyui.com/
 		* modataan CodeIgniteriin sopivaksi
 [    ] 	Autentikointi oAuth
 		* HybridAuth: http://hybridauth.sourceforge.net/ 
 		* CodeIgniter-palikka: https://github.com/andacata/HybridIgniter/blob/master/application/controllers/hauth.php
-[    ] 	Käyttäjien hallinta: CRUDiin käyttäjät-taulu
+[ OK ] 	Käyttäjien hallinta: CRUDiin käyttäjät-taulu
 [    ] 	Offline-selailu: HTML5 Local Storage
 [    ] 	Huoltomiehen paikannus: GPS-gate+selainplugin
 		* http://forum.gpsgate.com/topic.asp?TOPIC_ID=6102
@@ -24,6 +24,7 @@ Projektin osakokonaisuudet ja ratkaisut:
 		* kellotaulu näyttää ajastusvälit; vierestä voi säätää tarkkaa aikaa
 [    ] 	Valokuvien pienennys client puolella
 		* javascript/Ajax hoitaa
+		* https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 
 
 MAANANTAI:
@@ -40,6 +41,10 @@ MAANANTAI:
 - seuraavaksi crud huoltotoimenpiteille
 	
 TIISTAI:
+- crud huoltotauluun valmis
+- Uuteen huoltotietoon voi valita pudotusvalikosta seinäID:n.
+- huoltotaulun valokuvat puuttuu
+- Väliaikatieto: työaikaa kulunut 8,5 tuntia.
 
 KESKIVIIKKO:
 

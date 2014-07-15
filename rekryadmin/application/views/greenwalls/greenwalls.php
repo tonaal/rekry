@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="keywords" content="jquery,ui,easy,easyui,web">
 	<meta name="description" content="easyui help you build your web page easily!">
-	<title>Build CRUD Application with edit form in expanded row details - jQuery EasyUI Demo</title>
+	<title>Vihersein&auml;t</title>
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
@@ -83,7 +83,7 @@ $(function(){$('#dg').datagrid({
 		function destroyItem(){
 			var row = $('#dg').datagrid('getSelected');
 			if (row){
-				$.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
+				$.messager.confirm('Confirm','Oletko varma poistosta?',function(r){
 					if (r){
 						var index = $('#dg').datagrid('getRowIndex',row);
 						$.post('http://176.58.125.202/rekryadmin/crud/destroy_greenwall.php',{id:row.id},function(){
@@ -104,7 +104,7 @@ $(function(){$('#dg').datagrid({
 <body>
 
     <center>
-   
+   <div class="easyui-layout" fit="true">
 	<table id="dg" title="Seinien hallinta" style="width:700px;height:400px"
 			url="<?php echo site_url('crud_greenwalls/index2'); ?>"
 			toolbar="#toolbar" pagination="true"
@@ -123,7 +123,7 @@ $(function(){$('#dg').datagrid({
 		<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">Luo uusi sein&auml;</a>
 		<a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">Poista valittu</a>
 	</div>
-    
+   </div>
     </center>
 </body>
 </html>

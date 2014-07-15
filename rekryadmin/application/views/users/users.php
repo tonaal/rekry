@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="keywords" content="jquery,ui,easy,easyui,web">
 	<meta name="description" content="easyui help you build your web page easily!">
-	<title>Build CRUD Application with edit form in expanded row details - jQuery EasyUI Demo</title>
+	<title>K&auml;ytt&auml;j&auml;hallinta</title>
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
 	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
@@ -83,7 +83,7 @@ $(function(){$('#dg').datagrid({
 		function destroyItem(){
 			var row = $('#dg').datagrid('getSelected');
 			if (row){
-				$.messager.confirm('Confirm','Are you sure you want to remove this user?',function(r){
+				$.messager.confirm('Confirm','Oletko varma poistosta?',function(r){
 					if (r){
 						var index = $('#dg').datagrid('getRowIndex',row);
 						$.post('http://176.58.125.202/rekryadmin/crud/destroy_user.php',{id:row.id},function(){
@@ -105,7 +105,7 @@ $(function(){$('#dg').datagrid({
     <center>
 	
    
-	<table id="dg" title="K&auml;ytt&auml;j&auml;hallinta" style="width:700px;height:400px"
+	<table id="dg" title="K&auml;ytt&auml;j&auml;hallinta (oAuth)" style="width:700px;height:400px"
 			url="<?php echo site_url('crud_users/index2'); ?>"
 			toolbar="#toolbar" pagination="true"
 			fitColumns="true" singleSelect="true">

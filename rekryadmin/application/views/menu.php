@@ -255,7 +255,7 @@ body{
  		 <?php echo anchor('crud_greenwalls', 'Vihersein&auml;t') ?>
               </td>
               <td>
-		<?php echo anchor('huoltokaynnit', 'Huoltok&auml;ynnit') ?>
+		<?php echo anchor('crud_maintenance', 'Huoltok&auml;ynnit') ?>
               </td>
           </tr>
           
