@@ -13,7 +13,7 @@ Projektin osakokonaisuudet ja ratkaisut:
 [ OK ] 	CRUD
 		* Jquery EasyUI: http://www.jeasyui.com/
 		* modataan CodeIgniteriin sopivaksi
-[    ] 	Autentikointi oAuth
+[ 80%] 	Autentikointi oAuth
 		* HybridAuth: http://hybridauth.sourceforge.net/ 
 		* CodeIgniter-palikka: https://github.com/andacata/HybridIgniter/blob/master/application/controllers/hauth.php
 [ OK ] 	Käyttäjien hallinta: CRUDiin käyttäjät-taulu
@@ -45,6 +45,8 @@ TIISTAI:
 - Uuteen huoltotietoon voi valita pudotusvalikosta seinäID:n.
 - huoltotaulun valokuvat puuttuu
 - Väliaikatieto: työaikaa kulunut 8,5 tuntia.
+- Googlen oAuth integroitu CodeIgniteriin
+- Googlen apin rekisteröinti ei hyväksy ip-osoitteellista redirect endpoint tietoa, joten täytyy erottaa tämä osa www.ohjelmistotalo.fi/autentikointi osoitteeseen.
 
 KESKIVIIKKO:
 
