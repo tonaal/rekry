@@ -16,11 +16,18 @@ Projektin osakokonaisuudet ja ratkaisut:
 [ 80%] 	Autentikointi oAuth
 		* HybridAuth: http://hybridauth.sourceforge.net/ 
 		* CodeIgniter-palikka: https://github.com/andacata/HybridIgniter/blob/master/application/controllers/hauth.php
+		* siirretään ohjelmistotalon demopaikasta harkkapalvelimelle
 [ OK ] 	Käyttäjien hallinta: CRUDiin käyttäjät-taulu
 [    ] 	Offline-selailu: HTML5 Local Storage
+		* http://web-profile.com.ua/html/html-local-storage/
 [    ] 	Huoltomiehen paikannus: GPS-gate+selainplugin
 		* http://forum.gpsgate.com/topic.asp?TOPIC_ID=6102
-[    ] 	Ajastimien käyttöliittymä: HTML5 Canvas -piirtotekniikoilla.
+[ 50%] 	Ajastimien käyttöliittymä: HTML5 Canvas -piirtotekniikoilla.
+		* asetetaan ajastimien alkukohdaksi sunnuntai klo 12:00, myöhemmin parametrisoitavissa helposti
+		* pumppu pyörii 2 minuuttia kerrallaan
+		* Käyttäjä voi valita tunneissa kasteluvälin (min 8h, sillä käytössä vain kolme ajastinta)
+		* Jos kasteluväli ei mene tasan viikon tunneille, pyöristetään viimeinen kastelu edellisen ja seuraavan puoleen väliin.
+		* Käyttäjä voi valita 2-3 ajankohtaa, jolloin kastelu ei saa tapahtua. Näissä tapauksissa pyöristetään lähimpään: joko ennen kiellettyä ajankohtaa tai sen jälkeen - kummasta vaan on pidempi matka seuraavaan kasteluun.
 		* kellotaulu näyttää ajastusvälit; vierestä voi säätää tarkkaa aikaa
 [    ] 	Valokuvien pienennys client puolella
 		* javascript/Ajax hoitaa
@@ -49,7 +56,10 @@ TIISTAI:
 - Googlen apin rekisteröinti ei hyväksy ip-osoitteellista redirect endpoint tietoa, joten täytyy erottaa tämä osa www.ohjelmistotalo.fi/autentikointi osoitteeseen.
 
 KESKIVIIKKO:
+- ajastimien suunnittelu http://176.58.125.202/rekryadmin/index.php/wateringtimers
+- seuraavaksi ajastimien parsiminen sekä kieltoaikojen huomioon ottaminen
 
 TORSTAI:
+
 
 PERJANTAI:
