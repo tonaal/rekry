@@ -15,7 +15,7 @@
 
 include 'conn.php';
 
-$sql = "INSERT INTO maintenance (greenwallid, date, person, report, replacedplants, replacedlamps, picturebefore, pictureafter, nutritionadded, waterconductivitybefore, waterconductivityafer) VALUES('$greenwallid', '$date', '$person', '$report', '$replacedplants', '$replacedlamps', '$picturebefore', '$pictureafter', '$nutritionadded', '$waterconductivitybefore', '$waterconductivityafter')";
+$sql = "INSERT INTO maintenance (greenwallid, date, person, report, replacedplants, replacedlamps, picturebefore, pictureafter, nutritionadded, waterconductivitybefore, waterconductivityafter) VALUES('$greenwallid', '$date', '$person', '$report', '$replacedplants', '$replacedlamps', '$picturebefore', '$pictureafter', '$nutritionadded', '$waterconductivitybefore', '$waterconductivityafter')";
 
 
 

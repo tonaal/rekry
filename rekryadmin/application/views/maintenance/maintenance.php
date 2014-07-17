@@ -1,4 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+mb_internal_encoding('UTF-8');
+?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
         <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
         <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/toolbar.css">
         <style type="text/css">
             form{
                 margin:0;
@@ -135,10 +140,18 @@
         </script>
     </head>
     <body>
-
-        <center>
-            <div class="easyui-layout" fit="true">
-                <table id="dg" title="Huoltop&auml;iv&auml;kirja" style="width:700px;height:400px"
+ <ul class="glossymenu" >
+	<li><a href="<?php echo base_url();?>"><b>Dashboard</b></a></li>
+	<li><a href="<?php echo base_url();?>index.php/crud_greenwalls"><b>Vihersein&auml;t</b></a></li>
+	<li class="current"><a href="<?php echo base_url();?>index.php/crud_maintenance"><b>Huolto</b></a></li>	
+	<li><a href="<?php echo base_url();?>index.php/crud_users"><b>K&auml;ytt&auml;j&auml;hallinta</b></a></li>
+         <li><a href="http://176.58.125.202/rekryadmin/index.php/wateringtimers"><b>Timereiden hallinta</b></a></li>
+	
+</ul>
+<br/>
+     
+          
+                <table id="dg" title="Huoltop&auml;iv&auml;kirja" style="width:700px;height:400px; margin-left: 20px;"
                        url="<?php echo site_url('crud_maintenance/index2'); ?>"
                        toolbar="#toolbar" pagination="true"
                        fitColumns="true" singleSelect="true">
@@ -156,7 +169,7 @@
                     <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">Luo uusi huoltok&auml;ynti</a>
                     <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">Poista valittu</a>
                 </div>
-            </div>
-        </center>
+           
+      
     </body>
 </html>

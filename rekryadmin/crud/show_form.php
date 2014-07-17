@@ -1,3 +1,7 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+mb_internal_encoding('UTF-8');
+?>
 <form method="post">
 	<table class="dv-table" style="width:100%;background:#fafafa;padding:5px;margin-top:5px;">
 		<tr>

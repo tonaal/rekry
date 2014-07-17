@@ -22,17 +22,19 @@ Projektin osakokonaisuudet ja ratkaisut:
 		* http://web-profile.com.ua/html/html-local-storage/
 [    ] 	Huoltomiehen paikannus: GPS-gate+selainplugin
 		* http://forum.gpsgate.com/topic.asp?TOPIC_ID=6102
-[ 50%] 	Ajastimien käyttöliittymä: HTML5 Canvas -piirtotekniikoilla.
+[ 60%] 	Ajastimien käyttöliittymä: 
+		* HTML5 Canvas -piirtotekniikoilla.
 		* asetetaan ajastimien alkukohdaksi sunnuntai klo 12:00, myöhemmin parametrisoitavissa helposti
 		* pumppu pyörii 2 minuuttia kerrallaan
 		* Käyttäjä voi valita tunneissa kasteluvälin (min 8h, sillä käytössä vain kolme ajastinta)
 		* Jos kasteluväli ei mene tasan viikon tunneille, pyöristetään viimeinen kastelu edellisen ja seuraavan puoleen väliin.
 		* Käyttäjä voi valita 2-3 ajankohtaa, jolloin kastelu ei saa tapahtua. Näissä tapauksissa pyöristetään lähimpään: joko ennen kiellettyä ajankohtaa tai sen jälkeen - kummasta vaan on pidempi matka seuraavaan kasteluun.
+		* spinner: http://tjvantoll.com/2012/07/15/native-html5-number-picker-vs-jquery-uis-spinner-which-to-use/
 		* kellotaulu näyttää ajastusvälit; vierestä voi säätää tarkkaa aikaa
 [    ] 	Valokuvien pienennys client puolella
 		* javascript/Ajax hoitaa
 		* https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
-
+[    ]  Urlista index.php pois .htaccess rewritella
 
 MAANANTAI:
 ----------
@@ -60,6 +62,6 @@ KESKIVIIKKO:
 - seuraavaksi ajastimien parsiminen sekä kieltoaikojen huomioon ottaminen
 
 TORSTAI:
-
+- kasteluajastimien parsiminen valitulle kasteluvälille ok
 
 PERJANTAI:

@@ -1,10 +1,14 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+mb_internal_encoding('UTF-8');
+?>
 <script type="text/javascript">
-    $.getJSON('getGreenwallIdList', function(data){
+    $.getJSON('crud_maintenance/getGreenwallIdList', function(data){
         var html = '';
         var len = data.length;
 //        alert(data[1].id);
         for (var i = 0; i< len; i++) {
-            html += '<option value="' + data[i].id + '">' + data[i].wallId + '</option>';
+            html += '<option value="' + data[i].wallId + '">' + data[i].wallId + '</option>';
         }
         $('#greenwallid').append(html);
     });

@@ -1,3 +1,7 @@
+<?php
+header('Content-Type: text/html; charset=UTF-8');
+mb_internal_encoding('UTF-8');
+?>
 <form method="post">
 	<table class="dv-table" style="width:100%;background:#fafafa;padding:5px;margin-top:5px;">
 		<tr>
@@ -20,23 +24,21 @@
 		</tr>
                   <tr>
 			<td>Kasteluajastin 1</td>
-			<td><input name="wateringtimer1"></input></td>
-			<td>Tuuletinajastin 1</td>
-			<td><input name="ventilationtimer1" class="easyui-validatebox"></input></td>
+			<td colspan="3"><input name="wateringtimer1" size="79"></input></td>
+			
 		</tr>
                  <tr>
 			<td>Kasteluajastin 2</td>
-			<td><input name="wateringtimer2"></input></td>
-			<td>Tuuletinajastin 2</td>
-			<td><input name="ventilationtimer2" class="easyui-validatebox"></input></td>
+			<td colspan="3"><input name="wateringtimer2" size="79"></input></td>
+			
 		</tr>
                 <tr>
 			<td>Kasteluajastin 3</td>
-			<td><input name="wateringtimer3"></input></td>
-			<td>Tuuletinajastin 3</td>
-			<td><input name="ventilationtimer3" class="easyui-validatebox"></input></td>
+			<td colspan="3"><input name="wateringtimer3" size="79"></input></td>
+			
 		</tr>
-                 <tr>
+                 <tr><td>Tuuletinajastin 1</td>
+			<td><input name="ventilationtimer1" class="easyui-validatebox"></input></td>
 			<td>Valaisuajastin 1</td>
 			<td><input name="lighttimer1"></input></td>
 			<td></td>
@@ -49,6 +51,13 @@
 			<td></td>
 		</tr>
                 <tr>
+                    
+                <tr>
+                    <td>Tuuletinajastin 3</td>
+			<td><input name="ventilationtimer3" class="easyui-validatebox"></input></td>
+                        <td>Tuuletinajastin 2</td>
+			<td><input name="ventilationtimer2" class="easyui-validatebox"></input></td>
+                </tr>
                  <td>Muita tietoja</td>
                     <td ><textarea name="other"></textarea></td>
                     <td></td>
