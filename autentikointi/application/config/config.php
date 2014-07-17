@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.ohjelmistotalo.fi/autentikointi';
+$config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'i{_z40@R~Z?~P{~[ZCE,]v_wTXeMaG~{';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------

@@ -17,51 +17,51 @@ $config =
 		"providers" => array (
 			// openid providers
 			"OpenID" => array (
-				"enabled" => false
+				"enabled" => true
 			),
 
 			"Yahoo" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "id" => "", "secret" => "" ),
 			),
 
 			"AOL"  => array (
-				"enabled" => false
+				"enabled" => true
 			),
 
 			"Google" => array (
 				"enabled" => true,
-				"keys"    => array ( "id" => "923502296156-a54u2105h1cmp9kpfkj0ej8hcvjflsp6.apps.googleusercontent.com", "secret" => "ypkImvbSjQboddob8NoxBCg4" ),
+				"keys"    => array ( "id" => "", "secret" => "" ),
 			),
 
 			"Facebook" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "id" => "", "secret" => "" ),
 			),
 
 			"Twitter" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "key" => "", "secret" => "" )
 			),
 
 			// windows live
 			"Live" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "id" => "", "secret" => "" )
 			),
 
 			"MySpace" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "key" => "", "secret" => "" )
 			),
 
 			"LinkedIn" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "key" => "", "secret" => "" )
 			),
 
 			"Foursquare" => array (
-				"enabled" => false,
+				"enabled" => true,
 				"keys"    => array ( "id" => "", "secret" => "" )
 			),
 		),

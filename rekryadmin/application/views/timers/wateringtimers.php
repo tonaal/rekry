@@ -45,30 +45,31 @@ mb_internal_encoding('UTF-8');
             <tr>
                 <td>Valitse kasteluv&auml;li</td>
                 <td>
-                    <input type="text" name="intervall" id="intervall" size="7"> (tuntia)
+                    <input type="text" name="intervall" id="intervall" size="7" value="<?php if(isset($intervall)) echo @$intervall; else echo "8";?>"> (tuntia)
                 </td>
             </tr>
-<!--                <tr>
+              <tr>
                 <td>Hiljaisuuväli 1</td>
                 <td>
-                    <input type="text" name="hiljaisuusvali1" size="7"> (hh:mm-hh:mm)
+                    <input type="text" name="hiljaisuusvali1" size="17" readonly="readonly" value="not implemented" >  (hh:mm-hh:mm)
 
                 </td>
             </tr>
             <tr>
-                <td>Hiljaisuuväli 1</td>
-                <td> <input type="text" name="hiljaisuusvali2" size="7"> (hh:mm-hh:mm)
+                <td>Hiljaisuuväli 2</td>
+                <td>
+                <input type="text" name="hiljaisuusvali2" size="17" readonly="readonly" value="not implemented">  (hh:mm-hh:mm)
 
 
                 </td>
             </tr>
             <tr>
-                <td>Hiljaisuuväli 1</td>
+                <td>Hiljaisuuväli 3</td>
                 <td>
-                    <input type="text" name="hiljaisuusvali3" size="7"> (hh:mm-hh:mm)
+                    <input type="text" name="hiljaisuusvali3" size="17" readonly="readonly" value="not implemented">  (hh:mm-hh:mm)
 
                 </td>
-            </tr>-->
+            </tr>
         </table>
 
         <input type="submit" name="submit" value="Refresh">
