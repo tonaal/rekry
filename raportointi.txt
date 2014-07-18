@@ -32,7 +32,7 @@ Projektin osakokonaisuudet ja ratkaisut:
 		* Käyttäjä voi valita 2-3 ajankohtaa, jolloin kastelu ei saa tapahtua. Näissä tapauksissa pyöristetään lähimpään: joko ennen kiellettyä ajankohtaa tai sen jälkeen - kummasta vaan on pidempi matka seuraavaan kasteluun.
 		* spinner: http://tjvantoll.com/2012/07/15/native-html5-number-picker-vs-jquery-uis-spinner-which-to-use/
 		* kellotaulu näyttää ajastusvälit; vierestä voi säätää tarkkaa aikaa
-[  OK ] 	Valokuvien pienennys client puolella
+[  OK ] Valokuvien pienennys client puolella
 		* javascript/Ajax hoitaa
 		* https://github.com/blueimp/jQuery-File-Upload/wiki/Basic-plugin
 		* https://github.com/mgkimsal/jsclientshrinker
@@ -75,6 +75,8 @@ TORSTAI:
 PERJANTAI:
 - valaisuajastimien laskenta valmis: http://176.58.125.202/rekryadmin/index.php/timers/lighting
   * joitakin bugeja löytyy vielä (virheentarkistelu puuttuu). Kellonajat täytyy antaa oikein sekä katsoa, että sulkuaika osuu päälläoloajan sisään
+- Tuuletin ajastimet aloitettu
+- Projektin luovutus ja loppuyhteenveto. Työaikaa käytetty: 5 x 8h.
 
 KÄYTETYT OHJELMAT:
 Netbeans 7.2
@@ -95,10 +97,10 @@ MySQL Server version: 5.5.37-0+wheezy1 (Debian)
 
 NEXT STEPS:
 - Tehtävässä testatun Google-autentikoinnin integroiminen tuotantoon ja käyttäjähallintaan
+- Tehtävässä testattujen palikoiden integroiminen crud-riviin
 - Yleinen ulkoasujen siistiminen (kenttien paikat ja pituudet, taulukkojen leveydet jne pikselinviilaus)
 - CRUD-palikan tweak: esim. entterillä rivin hyväksyminen, rivin piilottaminen toisella klikkauksella, taulun dynaaminen kasvaminen
 - Ajastimien käyttöliittymä esimerkiksi kellotaululla ja/tai viikkotaulukko-näkymällä, josta näkee suoraan milloin tapahtuu jotain
-- Tehtävässä testattujen palikoiden integroiminen crud-riviin
 - Nopeuden ja käyttöliittymän optimointi mobiililaitteille yhteensopiviksi
 - Myöhemmin offline-selaus, offline-muokattavuus ja huoltomiehen GPS-paikannus - jo valmiiksi katsotuilla palikoilla
 - Dashboardin etusivu

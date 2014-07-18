@@ -379,10 +379,7 @@ mb_internal_encoding('UTF-8');
                     $alltimers_lighting[$pushindex] = array(
                         getTimerString($starttime, $alltimers_lighting_block[$pushindex]['block_start']),
                         getTimerString_for_hour($alltimers_lighting_block[$pushindex]['block_stop'], getEndtime($starttime, $lightsoff * 60))
-//                       
                     );
-//                    echo getTimerString_for_hour("13:00", "22:00");
-                    //print final light timer rule                   
                 } else {
                     
                 }
@@ -410,7 +407,80 @@ mb_internal_encoding('UTF-8');
 //        echo "<br/>".round(abs($to_time - $from_time) / 60/60, 0) . " tuntia";
         ?>     
     </form>
-    <!-- HTML --> 
 
+    <!--------- LIGHTTIMERS STARTS HERE-->
+    <br/>
+    <h2>Tuuletusajastimet</h2>
+    Not implemented yet
+    <table class="tg">
+        <tr>
+            <th class="tg-031e"></th>
+            <th class="tg-031e">Ajastin 1</th>
+            <th class="tg-031e">Ajastin 2</th>
+            <th class="tg-031e">Ajastin 3</th>
+        </tr>
+        <tr>
+            <td>SU</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+        <tr>
+            <td>MA</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+        <tr>
+            <td>TI</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+
+        <tr>
+            <td>KE</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+        <tr>
+            <td>TO</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+        <tr>
+            <td>PE</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+        <tr>
+            <td>LA</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+            <td>klo: rpm:</td>
+        </tr>
+<!--            <tr>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+            <td class="tg-031e">klo:<input id="su_ventilation_start1" name="su_ventilation_start1" size="6" value="<?php if (isset($su_ventilation_start1) && $su_ventilation_start1 != "") echo $su_ventilation_start1; ?>"> rpm:<input id="su_ventilation_rpm1" name="su_ventilation_rpm1" size="6" value="<?php if (isset($su_ventilation_rpm1) && $su_ventilation_rpm1 != "") echo $su_ventilation_rpm1; ?>"></td>
+        </tr>-->
+<!--            <tr>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+            <td class="tg-031e"><input id="" name="" size="6">-<input id="" name="" size="6"></td>
+
+        </tr>-->
+    </table>
 </body>
 </html>
