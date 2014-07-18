@@ -30,7 +30,8 @@ mb_internal_encoding('UTF-8');
         <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
         <script type="text/javascript" src="http://www.jeasyui.com/easyui/datagrid-detailview.js"></script>
         <script type="text/javascript">
-            
+     
+    
 
             $(function(){$('#dg').datagrid({
                     onClickRow: function(index,row){
@@ -92,6 +93,7 @@ mb_internal_encoding('UTF-8');
                 });
             });
             function saveItem(index){
+           
                 var row = $('#dg').datagrid('getRows')[index];
                 var url = row.isNewRecord ? 'http://176.58.125.202/rekryadmin/crud/save_maintenance.php' : 'http://176.58.125.202/rekryadmin/crud/update_maintenance.php?id='+row.id;
                 $('#dg').datagrid('getRowDetail',index).find('form').form('submit',{
@@ -146,12 +148,12 @@ mb_internal_encoding('UTF-8');
 	<li class="current"><a href="<?php echo base_url();?>index.php/crud_maintenance"><b>Huolto</b></a></li>	
 	<li><a href="<?php echo base_url();?>index.php/crud_users"><b>K&auml;ytt&auml;j&auml;hallinta</b></a></li>
          <li><a href="http://176.58.125.202/rekryadmin/index.php/wateringtimers"><b>Timereiden hallinta</b></a></li>
-	
+	<li><a href="<?php echo base_url(); ?>index.php/testcases/shrinker"><b>Kuvapienennin</b></a></li>
 </ul>
 <br/>
      
           
-                <table id="dg" title="Huoltop&auml;iv&auml;kirja" style="width:700px;height:400px; margin-left: 20px;"
+                <table id="dg" title="Huoltop&auml;iv&auml;kirja" style="width:850px;height:600px; margin-left: 20px;"
                        url="<?php echo site_url('crud_maintenance/index2'); ?>"
                        toolbar="#toolbar" pagination="true"
                        fitColumns="true" singleSelect="true">

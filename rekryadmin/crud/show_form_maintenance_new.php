@@ -6,7 +6,7 @@ mb_internal_encoding('UTF-8');
     $.getJSON('crud_maintenance/getGreenwallIdList', function(data){
         var html = '';
         var len = data.length;
-//        alert(data[1].id);
+        //        alert(data[1].id);
         for (var i = 0; i< len; i++) {
             html += '<option value="' + data[i].wallId + '">' + data[i].wallId + '</option>';
         }
@@ -27,14 +27,14 @@ mb_internal_encoding('UTF-8');
 
 
             <td>PVM</td>
-            <td><input name="date" class="easyui-validatebox" ></input></td>
+            <td><input name="message" class="easyui-validatebox" ></input></td>
         </tr>
 
         <tr>
             <td>Henkil&ouml;</td>
             <td><input name="person"></input></td>
-            <td>Raportti</td>
-            <td><textarea name="report" class="easyui-validatebox"></textarea></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <td>Kasveja vaihdettu kpl</td>
@@ -49,8 +49,14 @@ mb_internal_encoding('UTF-8');
             <td><input name="pictureafter" class="easyui-validatebox"></input></td>
         </tr>
         <tr>
-            <td>Ravinteita lis&auml;tty (grammaa/litraa)</td>
-            <td><input name="nutritionadded"></input></td>
+            <td>Ravinteita a lis&auml;tty </td>
+            <td><input name="nutritionadded1"></input></td>
+            <td>Ravinteita b lis&auml;tty </td>
+            <td><input name="nutritionadded2"></input></td>
+        </tr>
+        <tr>
+            <td>Ravinteita c lis&auml;tty </td>
+            <td><input name="nutritionadded3"></input></td>
             <td>Veden johtavuus ennen huoltoa (µS)</td>
             <td><input name="waterconductivitybefore" class="easyui-validatebox"></input></td>
         </tr>
@@ -60,7 +66,10 @@ mb_internal_encoding('UTF-8');
             <td> </td>
             <td></td>
         </tr>
-
+        <tr>
+            <td>Raportti</td>
+            <td colspan="3"><textarea name="report" class="easyui-validatebox" cols="67" rows="4"></textarea></td>
+        </tr>
     </table>
     <div style="padding:5px 0;text-align:right;padding-right:30px">
         <a href="#" class="easyui-linkbutton" iconCls="icon-save" plain="true" onclick="saveItem(<?php echo $_REQUEST['index']; ?>)">Tallenna</a>

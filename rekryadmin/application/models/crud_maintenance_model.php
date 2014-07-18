@@ -60,7 +60,9 @@ class crud_maintenance_model extends CI_Model {
                 'replacedlamps' => $data[ 'replacedlamps' ],
                 'picturebefore' => $data[ 'picturebefore' ],
                 'pictureafter' => $data[ 'pictureafter' ],
-                'nutritionadded' => $data[ 'nutritionadded' ],
+                'nutritionadded1' => $data[ 'nutritionadded1' ],
+                'nutritionadded2' => $data[ 'nutritionadded2' ],
+                'nutritionadded3' => $data[ 'nutritionadded3' ],
                 'waterconductivitybefore' => $data[ 'waterconductivitybefore' ],
                 'waterconductivityafter' => $data[ 'waterconductivityafter' ],
             );

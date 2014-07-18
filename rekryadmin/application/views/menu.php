@@ -16,6 +16,7 @@ mb_internal_encoding('UTF-8');
 	<li><a href="<?php echo base_url();?>index.php/crud_maintenance"><b>Huolto</b></a></li>	
 	<li><a href="<?php echo base_url();?>index.php/crud_users"><b>K&auml;ytt&auml;j&auml;hallinta</b></a></li>
         <li><a href="http://176.58.125.202/rekryadmin/index.php/wateringtimers"><b>Timereiden hallinta</b></a></li>
+        <li><a href="<?php echo base_url(); ?>index.php/testcases/shrinker"><b>Kuvapienennin</b></a></li>
 	
 </ul>
           

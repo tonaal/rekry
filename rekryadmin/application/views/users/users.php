@@ -113,12 +113,13 @@ $(function(){$('#dg').datagrid({
 	<li><a href="<?php echo base_url();?>index.php/crud_maintenance"><b>Huolto</b></a></li>	
 	<li class="current"><a href="<?php echo base_url();?>index.php/crud_users"><b>K&auml;ytt&auml;j&auml;hallinta</b></a></li>
          <li><a href="http://176.58.125.202/rekryadmin/index.php/wateringtimers"><b>Timereiden hallinta</b></a></li>
+         <li><a href="<?php echo base_url(); ?>index.php/testcases/shrinker"><b>Kuvapienennin</b></a></li>
 	
 </ul>
 <br/>
 	
    
-	<table id="dg" title="K&auml;ytt&auml;j&auml;hallinta (oAuth)" style="width:700px;height:400px; margin-left: 20px;"
+	<table id="dg" title="K&auml;ytt&auml;j&auml;hallinta (oAuth)" style="width:850px;height:600px; margin-left: 20px;"
 			url="<?php echo site_url('crud_users/index2'); ?>"
 			toolbar="#toolbar" pagination="true"
 			fitColumns="true" singleSelect="true">
